@@ -11,7 +11,7 @@
    ========================================================================== */
 
 html {
-    color: #222;
+    color: white;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -97,18 +97,28 @@ textarea {
 
 
 html {
-  background-color: #fcde67;
+  background-color: rgb(80, 80, 80);
   height: 100%;
   width: 100%;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  /*font-family: 'Cormorant Infant';*/
+  font-family: Georgia, 'Times New Roman', Times, serif;
   padding: 2em;
   font-size: 1.25em;
   height: 100%;
 }
+.hello{
+    font-weight: bold;
+    font-family: "lobster two";
+    font-size: 1.75em;
+    color: pink;
+}
 
+main {
+    font-size: 1.5em;
+}
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
   display: flex;
@@ -116,7 +126,6 @@ body {
   justify-content: space-between;
   font-weight: 300;
   
- 
   
 }
 
@@ -125,10 +134,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #030e12;
+  color: white;
   line-height: 1.5em;
-  font-size: .8em;
-  background-color: #fcde67;
+  font-size: 1.1em;
   height: auto;
   /*height: 300px; */
   padding: 1em;
@@ -222,17 +230,20 @@ body {
    Modify as content requires.
    ========================================================================== */
 
-/*
-   @media (min-width: 600px) {
-    .div-1, .div-2, .div-3 {
-        flex-grow: 1;
-    }
 
+  @media (min-width: 700px) {
+   .div-1, .div-2, .div-3 {
+    width: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
     .div-1, .div-2 {
-      border-right: 1px solid yellow;
-      padding-right: 30px;
-    }
-} */
+    border-right: 1px solid pink;
+    padding-right: 15px;
+  }
+} /*
    @media (min-width: 700px) {
     .div-1, .div-2, .div-3 {
       flex-basis: 29%;
@@ -242,7 +253,7 @@ body {
       border-right: 1px solid #5bccf6;
       padding-right: 15px;
     }
-}
+} */
 
     @media all and (min-width: 1200px) {
         .div-1, .div-2, .div-3 {
@@ -250,8 +261,8 @@ body {
     }
 
         .div-1, .div-2 {
-        border-right: 2px solid #5bccf6;
-      padding-right: 30px;
+        border-right: 1px solid pink;
+      padding-right: 20px;
     }
 }
 
